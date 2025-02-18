@@ -7,12 +7,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body class="bg-light">
-
-  <div class="container d-flex justify-content-center align-items-center min-vh-100 mt-5">
-    <div class="row ">
+  <div class="container d-flex justify-content-center align-items-center min-vh-100 mt-5" style="max-width: 400px;" id="form-container">
+    <div class="row">
      
+      <!-- Sign Up Form -->
       <div class="">
-        <div class="card shadow-lg">
+        <div class="card shadow-lg" id="signupform">
           <div class="card-body">
             <h2 class="card-title text-center mb-">Register</h2>
             <form action="">
@@ -28,16 +28,18 @@
                 <label for="password">Password</label>
                 <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
                 <input type="checkbox" onclick="myFunction()" class="mt-2 mx-1">Show Password 
-            </div>
+              </div>
               <button type="submit" class="btn btn-warning w-100">Sign Up</button>
               <p class="text-center mt-3">------ or ------</p>
-              <button type="button" class="btn btn-outline-secondary w-100">Sign In</button>
+              <button type="button" class="btn btn-outline-secondary w-100" id="togglesignin">Sign In</button>
             </form>
           </div>
         </div>
       </div>
+
+      <!-- Sign In Form (Hidden by Default) -->
       <div class="col-mb-4 mt-4">
-        <div class="card shadow-lg">
+        <div class="card shadow-lg" id="signinform" style="display:none;">
           <div class="card-body">
             <h2 class="card-title text-center mb-4">Sign In</h2>
             <form action="">
@@ -49,18 +51,18 @@
                 <label for="signin-password">Password</label>
                 <input type="password" class="form-control" id="signin-password" placeholder="Enter your password" required>
                 <input type="checkbox" onclick="myFunction()" class="mt-2 mx-1">Show Password
-            </div>
+              </div>
               <button type="submit" class="btn btn-primary w-100">Sign In</button>
+              <p class="text-center mt-3">------ or ------</p>
+              <button type="button" class="btn btn-outline-secondary w-100" id="togglesignup">Sign Up</button>
             </form>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 
-      
-    
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="script.js"></script> <!-- Include your script here -->
 </body>
-</html>
