@@ -14,3 +14,7 @@ togglesignup.addEventListener('click', function() {
     signinform.style.display = "none";
     signupform.style.display = "block";
 });
+togglesignup.addEventListener('click', function() {
+    signinform.style.display = "none";
+    signupform.style.display = "block";
+});
